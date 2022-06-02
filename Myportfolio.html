@@ -1,0 +1,116 @@
+﻿<!DOCTYPE html>
+<html>
+ <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ray Gurung's Portfolio</title>
+        <link rel="stylesheet" type="text/css" href="site.css">
+    </head>
+<body class="Background">
+
+    <div class="Navbar">
+        <a class="Myportfolio.html">Home</a>
+        <a href="About.Html">About</a>
+        <a href="Skills.html">Skills </a>
+        <a onclick="openForm()" ondblclick="closeForm()">Contact</a>  <!-- Makes sure that the openForm function runs when we click Conact on the navbar -->
+    </div>
+
+    <div id="Home">
+        <br>  <!-- Breaks inserted to add space between navbar and first heading -->
+        <br>
+
+    <body>  
+    <div class="dropdown">  
+      <button onclick="show_hide()" class="button">Choose Language</button>  
+       <center>  
+          <!-- dropdown list items will show when we click the drop button -->   
+          <div id="list-items">  
+             <a href="https://translate.google.com"> Hindi </a>  
+             <a href="https://translate.google.com"> English </a>  
+             <a href="https://translate.google.com"> Spanish </a>  
+             <a href="https://translate.google.com"> Chinese </a>  
+             <a href="https://translate.google.com"> Japanese </a>  
+          </div>  
+       
+               </center> 
+
+               <style>
+                table, th, td {
+                  border:1px solid black
+                  
+                }
+                </style>
+                <body>
+                
+                <h2>Brief History of  my work</h2>
+                
+                <table style="width:100%" >
+                  <tr>
+                    <td>2018-2022</td>
+                    <td>2017-2018</td>
+                    <td>2019-2020</td>
+                  </tr>
+                  <tr>
+                    <td>Contact center supervisor</td>
+                    <td>Utest Freelance manual testing project</td>
+                    <td>Udemy course-Software testing with Jira</td>
+                  </tr>
+                </table>
+
+                <p>More details about work on skills page.</p>
+
+    <div class="Video_Text"> 
+         <h1 >Welcome to Ray's Portfolio Website</h1>
+        <img src="../" (2022-05-04T21_30_21.817).jpg"" alt="">
+            <p>
+                <strong>
+                    <center>
+                        
+                        Hello.....my name is Ray and welcome to my portfolio website.  Here is where I'll tell you a little about me, my background and experience.<br>
+                        <br>I appreciate you for stopping by and I hope you enjoy your visit!
+                    </center>
+                </strong>
+            </p>
+    </div>
+
+    
+
+<!-- Contact section -->
+    <div id="Contact">
+        <button onclick="openForm()" class="Pop_Up_Button"> CONTACT </button>
+            <div class="form-popup" id="myForm">
+                <form action="https://formspree.io/f/xwkwzzkn" method="POST" class="form-container"> <!-- Here we are using a free online service from https://formspree.io/ to send our contact form to an email address of our choosing -->
+                <h1>Contact</h1>
+                    <label for="name"><b>Name</b></label>
+                        <input type="text" placeholder="Type your name here" name="name" required>
+                    <label for="phone"><b>Phone</b></label>
+                        <input type="text" placeholder="Enter your phone number here" name="phone">
+                    <label for="email"><b>Email</b></label>		
+                        <input type="text" placeholder="Type your email address here" name="email" required>
+                    <label for="message"><b>Message</b></label>
+                        <input type="text" placeholder="Type your message here" name="message">
+        <button type="submit" class="btn">SUBMIT</button>
+        <button type="button" class="btn cancel" onclick="closeForm()">CLOSE</button>
+                </form>
+            </div>
+    </div>
+
+   
+        <body>  
+        <form name="myform"  method="post" action="#" onsubmit="return validateemail();">  
+        Email: <input type="text" name="email">Sign up to get newletters from me.<br/>  
+          
+        <input type="submit" value="register">  
+        </form>  
+
+    <footer>
+        <p>
+            <center> "Ray Gurung: "
+            <span id="current_year_display">2022</span>
+            <br >
+            <i> With special thanks to:   </i>
+            <a href="https://activatework.com/">Activate Work</a></center><br>
+        </p>
+    </footer>
+    <script src="mysite.js"></script>
+</html>

@@ -1,0 +1,98 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ray Gurung's Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="site.css">
+</head>
+
+<div > 
+    
+    <img src="../images/20220504_141915 (2022-05-04T21_30_21.817).jpg" alt="">
+<body>
+<div class="Navbar">
+    <a href="Myportfolio.html">Home</a>
+    <a href="About.Html">About</a>
+    <a href="Skills.html">Skills </a>
+    <a onclick="openForm()" ondblclick="closeForm()">Contact</a>  <!-- Makes sure that the openForm function runs when we click Conact on the navbar -->
+</div>
+
+    </div>
+    
+    <div class="Column_1">
+     
+      <h1>About me </h1>
+      <p>
+        My name is Ray and i'm  a former manual tester looking to enter into automation testing industry.i 've always been fond of testing and finding bugs and i want to further my passion in a growing industry.'
+        Contact me by clicking on contact logo.!
+      </p>
+      <p>Software Quality Analyst with a demonstrated history of working in healthcare industry along with Team supervision experience.</p>
+    </div>
+  </div>
+  <!-- Contact section -->
+  <div id="Contact">
+    
+        <div class="form-popup" id="myForm">
+            <form action="https://formspree.io/f/xwkwzzkn" method="POST" class="form-container"> <!-- Here we are using a free online service from https://formspree.io/ to send our contact form to an email address of our choosing -->
+            <h1>Contact</h1>
+                <label for="name"><b>Name</b></label>
+                    <input type="text" placeholder="Type your name here" name="name" required>
+                <label for="phone"><b>Phone</b></label>
+                    <input type="text" placeholder="Enter your phone number here" name="phone">
+                <label for="email"><b>Email</b></label>		
+                    <input type="text" placeholder="Type your email address here" name="email" required>
+                <label for="message"><b>Message</b></label>
+                    <input type="text" placeholder="Type your message here" name="message">
+    <button type="submit" class="btn">SUBMIT</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">CLOSE</button>
+            </form>
+        </div>
+</div>
+</body>
+<script src="mysite.js"></script>
+
+<html>
+<body>
+<script>  
+function validateform(){  
+var name=document.myform.name.value;  
+var password=document.myform.password.value;  
+  
+if (name==null || name==""){  
+  alert("Name can't be blank");  
+  return false;  
+}else if(password.length<6){  
+  alert("Password must be at least 6 characters long.");  
+  return false;  
+  }  
+}  
+</script>  
+<body>  
+<form name="myform" method="post" action="http://www.javatpoint.com/javascriptpages/valid.jsp" onsubmit="return validateform()" >  
+Name: <input type="text" name="name"><br/>  
+Password: <input type="password" name="password"><br/>  
+<input type="submit" value="register">  
+</form>  
+
+<div id="Contact">
+    <button onclick="openForm()" class="Pop_Up_Button"> CONTACT </button>
+        <div class="form-popup" id="myForm">
+            <form action="https://formspree.io/f/xwkwzzkn" method="POST" class="form-container"> <!-- Here we are using a free online service from https://formspree.io/ to send our contact form to an email address of our choosing -->
+            <h1>Contact</h1>
+                <label for="name"><b>Name</b></label>
+                    <input type="text" placeholder="Type your name here" name="name" required>
+                <label for="phone"><b>Phone</b></label>
+                    <input type="text" placeholder="Enter your phone number here" name="phone">
+                <label for="email"><b>Email</b></label>		
+                    <input type="text" placeholder="Type your email address here" name="email" required>
+                <label for="message"><b>Message</b></label>
+                    <input type="text" placeholder="Type your message here" name="message">
+    <button type="submit" class="btn">SUBMIT</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">CLOSE</button>
+            </form>
+        </div>
+</div>
+</body>
+</html>
+
+
+

@@ -1,0 +1,56 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ray Gurung's Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="site.css">
+</head>
+
+<div class="Navbar">
+    <a href="Myportfolio.html">Home</a>
+    <a href="About.Html">About</a>
+    <a href="Skills.html">Skills </a>
+    <a onclick="openForm()" ondblclick="closeForm()">Contact</a>  <!-- Makes sure that the openForm function runs when we click Conact on the navbar -->
+</div>
+<img src="../images/Dhiraj Gurung(1) (1).jpg" alt="">
+
+<h1>Skills Showcase</h1>
+
+<h5>QA Automation Bootcamp-2022</h5>
+
+<p> I graduated from Automation Bootcamp in 2022 and practiced with 
+    all the automation tools and programming languages like Java, javascript, Selenium, Springboot
+    and TestNG to name a few examples.
+
+    </p>
+        <p>You can view my Linkedin profile here:<a href="https://www.linkedin.com/in/dhiraj-gurung/">My Linked In profile</a><br></p>
+        <h5>Manual testing-Utest-2018</h5>
+        <p>I was able to test bugs and get paid money for doing that.Performed GUI, functionality, and exploratory test for multiple mobile and web projects for startups, global enterprises that are related to social media, marketing, games, and E-commerce companies 
+            - Studies business requirements, technical specifications, and installation guidelines
+            -Test environment: Mobile: iPad mini, iPhone XR, Samsung Flip, Pixel 3XL ; PC: MacOS Monterey, Web-browsers: Chrome, FireFox, IE, Safari, Mozilla
+            - Performed browser testing (Chrome, Safari, Mozilla)</p>
+       
+
+        <h5>Testing with Jira Course-Udemy-2020.</h5>
+        <p>i also got my certificate for software testing for testing with Jira tool.i feel qualified to enter into QA automation industry.
+            Responsible for requirement gathering and managing test cases activities along with executing test cases over different servers. Selenium automation with Java.
+        </p>
+        <script src="mysite.js"></script>
+
+        <div id="Contact">
+            <button onclick="openForm()" class="Pop_Up_Button"> CONTACT </button>
+                <div class="form-popup" id="myForm">
+                    <form action="https://formspree.io/f/xwkwzzkn" method="POST" class="form-container"> <!-- Here we are using a free online service from https://formspree.io/ to send our contact form to an email address of our choosing -->
+                    <h1>Contact</h1>
+                        <label for="name"><b>Name</b></label>
+                            <input type="text" placeholder="Type your name here" name="name" required>
+                        <label for="phone"><b>Phone</b></label>
+                            <input type="text" placeholder="Enter your phone number here" name="phone">
+                        <label for="email"><b>Email</b></label>		
+                            <input type="text" placeholder="Type your email address here" name="email" required>
+                        <label for="message"><b>Message</b></label>
+                            <input type="text" placeholder="Type your message here" name="message">
+            <button type="submit" class="btn">SUBMIT</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">CLOSE</button>
+                    </form>
+                </div>
+        </div>
